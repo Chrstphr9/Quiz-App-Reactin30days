@@ -2,7 +2,9 @@ import React from 'react'
 
 const MainMenu = () => {
   return (
-    <div>MainMenu</div>
+    <div className='Menu'>
+        <button>Start Quiz</button>
+    </div>
   )
 }
 
