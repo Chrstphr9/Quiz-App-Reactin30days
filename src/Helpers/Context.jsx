@@ -1,3 +1,3 @@
 import {createContext} from 'react'
 
-export const QuizContest = createContext();
+export const QuizContext = createContext();
