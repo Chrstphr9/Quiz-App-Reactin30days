@@ -5,7 +5,7 @@ export const Questions = [
     optionB: "4",
     optionC: "5",
     optionD: "6",
-    answer: "optionB"
+    answer: "B"
     },
     {
     prompt: "Which is a Streaming Platform?",
@@ -13,7 +13,7 @@ export const Questions = [
     optionB: "Twitch",
     optionC: "Twitch",
     optionD: "Facebook",
-    answer: "optionC"
+    answer: "C"
     },
     {
     prompt: "Best Tool For Frontend?",
@@ -21,6 +21,6 @@ export const Questions = [
     optionB: "Django",
     optionC: "Node",
     optionD: "Tailwind",
-    answer: "optionA"
+    answer: "A"
     },  
 ];
