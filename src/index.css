@@ -10,7 +10,7 @@ text-align: center;
     flex-direction: column;
 }
 
-.Menu, .Quiz {
+.Menu, .Quiz, .EndScreen {
     width: 600px;
     height: 500px;
     border-radius: 10px;
@@ -22,7 +22,8 @@ text-align: center;
 }
 
 .Menu button,
-.Quiz button{
+.Quiz button,
+.EndScreen button {
     width: 300px;
     height: 50px;
     margin: 5px;
@@ -31,7 +32,7 @@ text-align: center;
     font-size: 20px;
 }
 
-.Menu, .Quiz {
+.Menu, .Quiz, .Endscreen {
     color: white;
     
 }
