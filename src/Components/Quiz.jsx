@@ -4,7 +4,7 @@ import { QuizContext } from "../Helpers/Context";
 
 const Quiz = () => {
   // Correctly destructure score and setScore from the context
-  const { score, setScore } = useContext(QuizContext);
+  const { score, setScore, setGameState } = useContext(QuizContext);
   const [currQuestion, setCurrQuestion] = useState(0);
   const [optionChosen, setOptionChosen] = useState("");
 
@@ -16,6 +16,13 @@ const Quiz = () => {
     setCurrQuestion(currQuestion + 1); // Move to the next question
     setOptionChosen(""); // Reset option for the next question
   };
+
+  const finishQuiz = () => {
+    if (Questions[currQuestion].answer === optionChosen) {
+      setScore(prevScore => prevScore + 1); // Using prevScore to ensure state updates properly
+    }
+    setGameState("endScreen")
+  }
 
   return (
     <div className="Quiz">
@@ -34,8 +41,12 @@ const Quiz = () => {
           {Questions[currQuestion].optionD}
         </button>
       </div>
-      {currQuestion == Questions.length -1}
-      <button onClick={nextQuestion}>Next Question</button>
+      {currQuestion == Questions.length -1 ?  (
+        <button onClick={finishQuiz}>Finish Quiz</button>
+      ) : (
+        <button onClick={nextQuestion}>Next Question</button>
+      )}
+      
     </div>
   );
 };

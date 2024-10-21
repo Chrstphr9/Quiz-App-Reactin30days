@@ -2,7 +2,9 @@ import React from 'react'
 
 const EndScreen = () => {
   return (
-    <div>EndScreen</div>
+    <div>
+      
+    </div>
   )
 }
 
